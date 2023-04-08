@@ -17,9 +17,14 @@ contract TokenTest is Test {
 
     function testDeployment() public {
         uint bal = token.knowBalanceOf();
+        bool val;
         if(bal > 0){
-            bool val = true;
+            val = true;
         }
         assertTrue(val);
+    }
+
+    function testReturnTrue() public {
+        assertTrue(true);
     }
 }
